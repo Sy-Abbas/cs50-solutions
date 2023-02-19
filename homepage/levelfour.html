@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>History Trivia</title>
+    <script>
+      // TODO: Add code to check answers to questions
+    </script>
+  </head>
+  <body>
+    <script src="Lfour.js"></script>
+    <div class="header">
+      <h1>History Trivia</h1>
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="levelone.html">Science</a></li>
+          <li><a href="leveltwo.html">Geography</a></li>
+          <li><a href="levelthree.html">Maths</a></li>
+          <li><a href="levelfour.html">History</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <h2>Multiple Choice</h2>
+        <hr />
+        <!-- TODO: Add multiple choice question here -->
+        <h3>
+          What was the term for the official policy of racial segregation in
+          South Africa until 1994?
+        </h3>
+        <button class="mulC" onclick="tigger(event)">Oversight</button>
+        <button class="mulC" onclick="tigger(event)">Civility</button>
+        <button class="mulC" onclick="tigger(event)">Libel</button>
+        <button class="mulC" onclick="tigger(event)">Apartheid</button>
+        <p id="error"></p>
+      </div>
+
+      <div class="section">
+        <hr />
+        <!-- TODO: Add multiple choice question here -->
+        <h3>In 1912, which famous human made sea vessel sunk?</h3>
+        <button class="mulC" onclick="tigger2(event)">Le Raymound</button>
+        <button class="mulC" onclick="tigger2(event)">Titanic</button>
+        <button class="mulC" onclick="tigger2(event)">Hans Hedtoft</button>
+        <button class="mulC" onclick="tigger2(event)">Albatross</button>
+        <p id="error2"></p>
+      </div>
+    </div>
+  </body>
+</html>

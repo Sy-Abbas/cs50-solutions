@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+<div class="section">
+
+    <h2>Summary of Owned Stocks</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Stock Symbol</th>
+                <th>Stock Name</th>
+                <th>Number of Shares</th>
+                <th>Current Price</th>
+                <th>Total Value of Holding</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in datas %}
+            <tr>
+               <td>{{data["stockSymbol"]}}</td>
+               <td>{{data["stockName"]}}</td>
+               <td>{{data["shares"]}}</td>
+               <td>{{data["currentPrice"]}}</td>
+               <td>{{data["totalValue"]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="section">
+
+    <h2>Account Portfolio</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Current Balance</th>
+                <th>Total Value (stocks + cash)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>{{finaldata["currentCash"]}}</td>
+               <td>{{finaldata["totalMoney"]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Trivia!</title>
+    <script>
+      // TODO: Add code to check answers to questions
+    </script>
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <div class="header">
+      <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <h2>Part 1: Multiple Choice</h2>
+        <hr />
+        <!-- TODO: Add multiple choice question here -->
+        <h3>How many rings are on the Olympic flag?</h3>
+        <button class="mulC" onclick="tigger(event)">0</button>
+        <button class="mulC" onclick="tigger(event)">4</button>
+        <button class="mulC" onclick="tigger(event)">5</button>
+        <button class="mulC" onclick="tigger(event)">7</button>
+        <p id="error"></p>
+      </div>
+
+      <div class="section">
+        <h2>Part 2: Free Response</h2>
+        <hr />
+        <!-- TODO: Add free response question here -->
+        <h3>Which is the only body part that is fully grown from birth?</h3>
+        <input type="text" id="ans" onkeypress="enter(event)" />
+        <button onclick="freeResponse()">Check Answer</button>
+        <p id="2nderror"></p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: gave the best time for sorted numbers
+
+sort2 uses: merge sort
+
+How do you know?: gave the best time for random numbers and second best time for sorted numbers
+
+sort3 uses: selection sort
+
+How do you know?: gave worst time for sorted numbers
